@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite" parallel = "methods">
+    <!--
+    suite的线程属性不同级别的详细说明（自动化用例中相互之间没有耦合关系，相对独立的用例进行并行执行。）
+    测试的级别由上至下可以分为suite -> test -> class -> method
+    parallel	TestNG是否运行不同的线程来运行这个套件，默认为none，其他级别为tests、classes、methods、instances
+    <suite name="Testng Parallel Test" parallel="tests" thread-count="5">
+    <suite name="Testng Parallel Test" parallel="classes" thread-count="5">
+    <suite name="Testng Parallel Test" parallel="methods" thread-count="5">
+    它们的共同点都是最多起5个线程去同时执行不同的用例。
+    它们的区别如下：
+
+    tests级别：不同test tag下的用例可以在不同的线程执行，相同test tag下的用例只能在同一个线程中执行。
+    classs级别：不同class tag下的用例可以在不同的线程执行，相同class tag下的用例只能在同一个线程中执行。
+    methods级别：所有用例都可以在不同的线程去执行。
+    https://www.cnblogs.com/znicy/p/6534893.html
+    https://blog.csdn.net/jamieblue1/article/details/98879313
+    -->
+    <test name="Test">
+        <classes>
+            <class name = "TestNG04"/>
+            <class name = "TestNG05"/>
+        </classes>
+    </test>
+</suite>

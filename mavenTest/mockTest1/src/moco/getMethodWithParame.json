@@ -1,0 +1,19 @@
+[
+  {
+    "description": "这是一个带参数的get方法",
+    "request": {
+      "uri": "/getMethodWithPar",
+      "method": "get",
+      "queries": {
+        "name": "gecao",
+        "age": "23"
+      }
+    },
+    "response":{
+      "text": "带参数的get方法请求成功啦！",
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <!--测试套件的一些属性
+    name	套件的名称，这是一个强制属性
+    verbose	运行的级别或详细程度，级别为0-10，其中10最详细
+    parallel	TestNG是否运行不同的线程来运行这个套件，默认为none，其他级别为methods、tests、classes、instances
+    thread-count	如果启用并行模式(忽略其他方式)，则为使用的线程数
+    annotations	在测试中使用的注释类型
+    time-out	在本测试中的所有测试方法上使用的默认超时
+    -->
+    <test name="Test">
+        <!-- group测试 -->
+        <groups>
+            <incloud name="group1"></incloud>
+            <incloud name="group2"></incloud>
+        </groups>
+        <classes>
+            <class name="TestNG"/>
+            <class name="TestNG02"/>
+            <class name="TestNG03"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

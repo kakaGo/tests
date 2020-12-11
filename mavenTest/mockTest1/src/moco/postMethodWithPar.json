@@ -1,0 +1,19 @@
+[
+  {
+    "description": "这是一个带参数的post方法",
+    "request": {
+      "uri": "/postMethodWithPar",
+      "method": "post",
+      "forms": {
+        "name": "gecao",
+        "age": "23"
+      }
+    },
+    "response": {
+      "text": "带参数的post方法访问成功啦！",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]

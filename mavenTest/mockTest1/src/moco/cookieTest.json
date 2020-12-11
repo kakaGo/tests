@@ -1,0 +1,57 @@
+[
+  {
+    "description": "这是一个带cookie的get请求",
+    "request": {
+      "uri": "/withCookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response":{
+      "text": "这是一个需要携带cookies信息才能访问的get请求！！",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带cookie的post请求",
+    "request": {
+      "uri": "/postWithcookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response":{
+      "text":"这是一个需要携带cookies信息才能访问的post请求！！",
+      "headers": {
+        "Context-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带cookie&json 的post请求",
+    "request": {
+      "uri": "/postWithcookieJson",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json":{
+        "name":"xiaoming",
+        "age":"17"
+      }
+    },
+    "response":{
+      "json":{
+        "xiaoming":"success",
+        "status":1
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]
